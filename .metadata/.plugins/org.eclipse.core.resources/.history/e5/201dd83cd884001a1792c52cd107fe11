@@ -1,0 +1,5 @@
+package com.mobileproject.config;
+
+public class JpaAuditingConfig {
+
+}

@@ -1,0 +1,14 @@
+1587475553245	Rename package 'mobileproject.api'
+1587476107969	Rename type 'HomeAPI'
+1587476142863	Rename type 'Product'
+1587494986898	Delete element
+1587499843877	Copy compilation unit
+1587499855026	Delete element
+1587501846515	Delete element
+1587501881769	Rename package 'com.mobileproject.service.impl'
+1587501970057	Rename type 'IProduct'
+1587502030599	Delete element
+1587502079922	Rename package 'com.mobileproject.service.impl'
+1587502108823	Copy compilation unit
+1587502120682	Delete element
+1587559468722	Rename type 'BaseDTO'

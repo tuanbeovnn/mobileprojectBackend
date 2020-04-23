@@ -1,0 +1,11 @@
+package com.mobileproject.entity;
+
+import java.util.Date;
+
+public class BaseEntity {
+	private Long id;
+    private Date createdDate;
+    private Date modifiedDate;
+    private String createdBy;
+    private String modifiedBy;
+}

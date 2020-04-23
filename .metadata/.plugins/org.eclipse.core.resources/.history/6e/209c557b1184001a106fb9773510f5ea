@@ -1,0 +1,5 @@
+package com.mobileproject.service;
+
+public class ProductService implements IProductService {
+
+}

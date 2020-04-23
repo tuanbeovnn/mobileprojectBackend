@@ -1,0 +1,10 @@
+package com.mobileproject.respository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mobileproject.entity.ProducerEntity;
+import com.mobileproject.entity.ProductEntity;
+
+public interface ProducerRespository extends JpaRepository<ProducerEntity, Long> {
+	ProductEntity findOneByName(String name);
+}

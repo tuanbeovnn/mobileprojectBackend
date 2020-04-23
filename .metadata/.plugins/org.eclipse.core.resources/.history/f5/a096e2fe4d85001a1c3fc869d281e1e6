@@ -1,0 +1,13 @@
+package com.mobileproject.api.output;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mobileproject.dto.ProductDTO;
+
+public class ProductOutput {
+	private int page;
+	private int limit;
+	
+	private List<ProductDTO> products = new ArrayList<>();
+}

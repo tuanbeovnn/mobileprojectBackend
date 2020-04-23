@@ -1,0 +1,7 @@
+package com.mobileproject.service;
+
+import com.mobileproject.dto.ProductDTO;
+
+public interface IProductService {
+	ProductDTO save();
+}

@@ -1,0 +1,14 @@
+package com.mobileproject.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mobileproject.entity.ProductEntity;
+import com.mobileproject.service.IProductService;
+
+@Service
+public class ProductService implements IProductService {
+	
+	@Autowired
+	private ProductEntity productentity;
+	
+}

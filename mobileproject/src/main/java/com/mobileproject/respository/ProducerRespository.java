@@ -1,0 +1,9 @@
+package com.mobileproject.respository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mobileproject.entity.ProducerEntity;
+
+public interface ProducerRespository extends JpaRepository<ProducerEntity, Long> {
+	ProducerEntity findByCode(String code);
+}

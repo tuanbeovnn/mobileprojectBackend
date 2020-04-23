@@ -1,0 +1,29 @@
+package com.mobileproject.api;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mobileproject.dto.ProductDTO;
+
+@RestController
+public class ProductAPI {
+	
+	@PostMapping(value = "/product")
+	public ProductDTO createProduct(@RequestBody ProductDTO model) {
+		return model;
+	}
+	@PutMapping(value = "/product")
+	public ProductDTO updateProduct(@RequestBody ProductDTO model) {
+		return model;
+	}
+	@DeleteMapping(value = "/product")
+	public void deleteProduct(@RequestBody long[] ids) {
+		return model;
+	}
+	
+}

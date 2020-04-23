@@ -1,0 +1,11 @@
+package com.mobileproject.api;
+
+
+@RestController
+public class HomeAPI {
+	@GetMapping("/api/test")
+    public ResponseEntity<String> testSpringBoot() {
+        return ResponseEntity.ok("Success");
+    }
+	
+}

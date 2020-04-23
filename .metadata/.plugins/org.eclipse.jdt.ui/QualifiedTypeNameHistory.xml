@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.mobileproject.entity.ProducerEntity"/>
+<fullyQualifiedTypeName name="com.mobileproject.dto.ProductDTO"/>
+<fullyQualifiedTypeName name="com.mobileproject.entity.ProductEntity"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.domain.support.AuditingEntityListener"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityListeners"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.config.EnableJpaAuditing"/>
+<fullyQualifiedTypeName name="org.springframework.data.domain.AuditorAware"/>
+<fullyQualifiedTypeName name="org.apache.catalina.authenticator.SpnegoAuthenticator.AuthenticateAction"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.util.net.openssl.ciphers.Authentication"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.security.SecurityAuthorizeMode"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.Authentication"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.context.SecurityContextHolder"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.CreatedDate"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.CreatedBy"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.LastModifiedBy"/>
+<fullyQualifiedTypeName name="org.springframework.data.annotation.LastModifiedDate"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration"/>
+</qualifiedTypeNameHistroy>

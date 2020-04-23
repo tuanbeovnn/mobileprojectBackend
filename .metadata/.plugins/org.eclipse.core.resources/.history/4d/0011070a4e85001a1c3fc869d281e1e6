@@ -1,0 +1,39 @@
+package com.mobileproject.api.output;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mobileproject.dto.ProductDTO;
+
+public class ProductOutput {
+	private int page;
+	private int totalPage;
+	
+	private List<ProductDTO> products = new ArrayList<>();
+
+	public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	public int getLimit() {
+		return limit;
+	}
+
+	public void setLimit(int limit) {
+		this.limit = limit;
+	}
+
+	public List<ProductDTO> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<ProductDTO> products) {
+		this.products = products;
+	}
+	
+	
+}

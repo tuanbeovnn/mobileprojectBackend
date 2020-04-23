@@ -1,0 +1,5 @@
+package com.mobileproject.service.impl;
+
+public interface IProductService {
+
+}

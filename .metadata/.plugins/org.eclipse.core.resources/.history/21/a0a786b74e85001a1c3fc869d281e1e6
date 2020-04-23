@@ -1,0 +1,71 @@
+package com.mobileproject.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mobileproject.converter.NewConverter;
+import com.mobileproject.dto.ProductDTO;
+import com.mobileproject.entity.ProducerEntity;
+import com.mobileproject.entity.ProductEntity;
+import com.mobileproject.respository.ProducerRespository;
+import com.mobileproject.respository.ProductRespository;
+import com.mobileproject.service.IProductService;
+
+@Service
+public class ProductService implements IProductService {
+	
+	@Autowired
+	private ProductRespository productRespository;
+	
+	@Autowired
+	private ProducerRespository producerRespository;
+	
+	@Autowired
+	private NewConverter newConverter;
+	@Override
+	public ProductDTO save(ProductDTO productDTO) {
+		ProductEntity productEntity = new ProductEntity();
+		if(productDTO.getId() !=null) {
+			ProductEntity oldproductEntity = productRespository.findOne(productDTO.getId());
+			productEntity = newConverter.toEntity(productDTO,oldproductEntity);
+		}else {
+			productEntity = newConverter.toEntity(productDTO);
+		}
+		ProducerEntity producerEntity = producerRespository.findByCode(productDTO.getProducerCode());
+		
+		productEntity.setProducer(producerEntity);
+		productEntity = productRespository.save(productEntity);
+		return newConverter.toDTO(productEntity);
+	}
+//	@Override
+//	public ProductDTO update(ProductDTO productDTO) {
+//		ProductEntity productEntity = productRespository.findOne(productDTO.getId());
+//		ProductEntity newProductEntity = newConverter.toEntity(productDTO,productEntity);
+//		ProducerEntity producerEntity = producerRespository.findByCode(productDTO.getProducerCode());
+//		productEntity.setProducer(producerEntity);
+//		productEntity = productRespository.save(productEntity);
+//		return newConverter.toDTO(productEntity);
+//	}
+	@Override
+	public void delete(long[] ids) {
+		// TODO Auto-generated method stub
+		
+		for (long item : ids) {
+			productRespository.delete(item);
+		}
+		
+	}
+	@Override
+	public List<ProductDTO> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public int totalItem() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

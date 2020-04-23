@@ -1,0 +1,5 @@
+package com.mobileproject.respository;
+
+public interface ProducerRespository extends JpaRepository<ProducerEntity, Long> {
+
+}

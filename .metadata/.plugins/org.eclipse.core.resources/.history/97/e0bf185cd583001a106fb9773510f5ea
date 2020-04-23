@@ -1,0 +1,17 @@
+package com.mobileproject.api;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Controller
+public class ProductAPI {
+	
+	@RequestMapping(value ="/products", method =RequestMethod.POST)
+	
+	@ResponseBody
+	public ProductDTO createNew(@RequestBody ProductDTO model) {
+		return model;
+	}
+	
+}

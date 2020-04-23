@@ -1,0 +1,5 @@
+package com.mobileproject.dto;
+
+public class BaseDTO {
+
+}

@@ -1,0 +1,10 @@
+package com.mobileproject.api.output;
+
+import java.util.ArrayList;
+
+public class ProductOutput {
+	private int page;
+	private int limit;
+	
+	private List<ProductDTO> products = new ArrayList<E>()
+}

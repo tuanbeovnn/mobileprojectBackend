@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: mobileproject
+Implementation-Version: 1.0
+Built-By: Tuan Nguyen
+Implementation-Vendor-Id: com.mobileweb
+Build-Jdk: 1.8.0_231
+Implementation-URL: http://projects.spring.io/spring-boot/mobileprojec
+ t/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: com.mobileproject.Application
+

@@ -1,0 +1,10 @@
+package com.mobileproject.service;
+
+import com.mobileproject.dto.ProductDTO;
+
+public interface IProductService {
+	ProductDTO save(ProductDTO productDTO);
+//	ProductDTO update(ProductDTO productDTO);
+	void delete (long[] ids);
+	List<ProductDTO> findAll();
+}

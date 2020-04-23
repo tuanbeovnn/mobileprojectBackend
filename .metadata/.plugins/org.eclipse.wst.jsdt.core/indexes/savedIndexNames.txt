@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\Tuan Nguyen\IdeaProjects\newapi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3257470274.index
+4119576234.index
+4231653131.index
+2600277213.index
+3755713152.index

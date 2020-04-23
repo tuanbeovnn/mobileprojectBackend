@@ -1,0 +1,27 @@
+package com.mobileproject.config;
+
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+import org.springframework.boot.autoconfigure.security.SecurityAuthorizeMode;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.AuditorAware;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@Configuration
+@EnableJpaAuditing(auditorAwareRef ="auditorProvider")
+public class JpaAuditingConfig {
+	@Bean
+	public AuditorAware<String> auditorProvider(){
+		return new AuditorAwareImpl();
+	}
+	
+	public static class AuditorAwareImpl implements AuditorAware<String> {
+		
+		public String getCurrentAuditor() {
+			Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+			if(authentication == null || !authentication.isAuthenticated()) {
+				return null;
+			}
+			return authentication.getName();
+		}
+	}
+}

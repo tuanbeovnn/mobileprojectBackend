@@ -1,0 +1,14 @@
+package com.mobileproject.converter;
+
+import org.springframework.stereotype.Component;
+
+import com.mobileproject.dto.ProductDTO;
+import com.mobileproject.entity.ProductEntity;
+
+@Component
+public class NewConverter {
+	public ProductEntity toEntity(ProductDTO productDTO) {
+		ProductEntity productEntity = new ProductEntity();
+		return productEntity;
+	}
+}

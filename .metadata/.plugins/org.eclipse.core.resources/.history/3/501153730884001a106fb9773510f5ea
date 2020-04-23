@@ -1,0 +1,5 @@
+package com.mobileproject.entity;
+
+public class ProductEntity {
+
+}

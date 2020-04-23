@@ -1,0 +1,25 @@
+package com.mobileproject.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mobileproject.dto.ProductDTO;
+import com.mobileproject.entity.ProductEntity;
+import com.mobileproject.respository.ProductRespository;
+import com.mobileproject.service.IProductService;
+
+@Service
+public class ProductService implements IProductService {
+	
+	@Autowired
+	private ProductEntity productentity;
+	
+	@Autowired
+	private ProductRespository productRespository;
+	@Override
+	public ProductDTO save(ProductDTO productDTO) {
+		
+		return null;
+	}
+	
+}

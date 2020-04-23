@@ -1,0 +1,5 @@
+package com.mobileproject.respository;
+
+public interface ProductRespository {
+
+}
